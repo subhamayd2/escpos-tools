@@ -1,5 +1,11 @@
 
 # Using PHP version 8.1
+- php installer (Thread-safe version): [php download](https://windows.php.net/download/#php-8.1)
+- imagick: [imagick download](https://windows.php.net/downloads/pecl/releases/imagick/3.7.0/)
+- composer: [composer download](https://getcomposer.org/)
+- Include these paths in environment (imagick path should be before php path):
+  - E:\php_imagick-370
+  - E:\php-81
 
 ## Quick start
 
