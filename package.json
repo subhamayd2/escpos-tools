@@ -1,0 +1,16 @@
+{
+  "name": "escpos-tools",
+  "version": "1.0.0",
+  "description": "- php installer (Thread-safe version): [php download](https://windows.php.net/download/#php-8.1)\r - imagick: [imagick download](https://windows.php.net/downloads/pecl/releases/imagick/3.7.0/)\r - composer: [composer download](https://getcomposer.org/)\r - Include these paths in environment (imagick path should be before php path):\r   - E:\\php_imagick-370\r   - E:\\php-81",
+  "main": "server.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

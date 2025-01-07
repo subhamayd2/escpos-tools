@@ -17,3 +17,5 @@ vendor/
 # other build files
 build/*
 *.phar
+
+node_modules
