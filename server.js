@@ -1,11 +1,13 @@
-const { spawn } = require('child_process');
-const child = spawn('php', ['esc2html.php', 'output.txt', '> output.html']);
+const { exec } = require('child_process');
 
-// use child.stdout.setEncoding('utf8'); if you want text chunks
-child.stdout.on('data', (chunk) => {
-    console.log(chunk);
-});
-
-child.on('close', (code) => {
-  console.log(`child process exited with code ${code}`);
+exec("php esc2html.php output.txt > output.html", (error, stdout, stderr) => {
+    if (error) {
+        console.log(`error: ${error.message}`);
+        return;
+    }
+    if (stderr) {
+        console.log(`stderr: ${stderr}`);
+        return;
+    }
+    console.log(`stdout: ${stdout}`);
 });
